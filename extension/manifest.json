@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "諸説あります",
+  "version": "1.0",
+  "description": "「知らんけど」を「諸説あります」に変換します（強い意志で）",
+  "permissions": [ "activeTab" ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [ "scripts/loader.js" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "scripts/content.js",
+        "node_modules/wasm-game-of-life/wasm_game_of_life_bg.wasm",
+        "node_modules/wasm-game-of-life/wasm_game_of_life_bg.js",
+        "node_modules/wasm-game-of-life/wasm_game_of_life.js"
+      ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}
