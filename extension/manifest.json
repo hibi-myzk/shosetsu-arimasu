@@ -31,10 +31,12 @@
   "web_accessible_resources": [
     {
       "resources": [
+        "bootstrap.js",
+        "popup.js",
         "scripts/content.js",
-        "node_modules/wasm-game-of-life/wasm_game_of_life_bg.wasm",
-        "node_modules/wasm-game-of-life/wasm_game_of_life_bg.js",
-        "node_modules/wasm-game-of-life/wasm_game_of_life.js"
+        "node_modules/wasm-shosetsu-arimasu/wasm_shosetsu_arimasu_bg.wasm",
+        "node_modules/wasm-shosetsu-arimasu/wasm_shosetsu_arimasu_bg.js",
+        "node_modules/wasm-shosetsu-arimasu/wasm_shosetsu_arimasu.js"
       ],
       "matches": [ "<all_urls>" ]
     }

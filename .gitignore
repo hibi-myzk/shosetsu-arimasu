@@ -1,4 +1,6 @@
 .DS_Store
-node_moduloes/
+node_modules/
 *.swp
 target/
+extension.crx
+extension.pem
