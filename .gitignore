@@ -4,3 +4,5 @@ node_modules/
 target/
 extension.crx
 extension.pem
+pkg/
+pkg_module/

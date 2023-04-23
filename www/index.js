@@ -1,5 +1,5 @@
-import { Universe, Cell } from "wasm-shosetsu-arimasu";
-import { memory } from "wasm-shosetsu-arimasu/wasm_shosetsu_arimasu_bg";
+import { Universe, Cell } from "wasm-shosetsu-arimasu-module";
+import { memory } from "wasm-shosetsu-arimasu-module/wasm_shosetsu_arimasu_bg";
 
 const CELL_SIZE = 5; // px
 const GRID_COLOR = "#CCCCCC";
